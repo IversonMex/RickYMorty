@@ -1,23 +1,19 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import Cabecera from './components/Cabecera.vue'
 </script>
 
 <template>
-  <header class="bg-emerald-900">
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <Cabecera/>
+  <div class="font-style: italic bg-emerald-600 w-500 h-300 flex font-bold text-5xl">
+    <div class="text-left w-1/3 m-4">
+    <RouterLink to="/">Inicio</RouterLink> </div>
+    <div class="text-center w-1/3 m-4">
+    <RouterLink to="/personajes">¿Acerca de nosotros?</RouterLink> </div>
+    <div class="text-right w-1/3 m-4">
+    <RouterLink to="/about">Personajes</RouterLink> </div>
+  </div>
 </template>
 
 <style scoped>
