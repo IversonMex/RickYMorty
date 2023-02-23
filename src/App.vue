@@ -1,19 +1,20 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router";
+import HelloWorld from "./components/HelloWorld.vue";
 import Cabecera from './components/Cabecera.vue'
 </script>
 
 <template>
   <Cabecera/>
-  <div class="font-style: italic bg-emerald-600 w-500 h-300 flex font-bold text-5xl">
-    <div class="text-left w-1/3 m-4">
+  <div class="font-mono bg-emerald-600 w-500 h-300 flex font-bold text-5xl border-y-8 border-y-sky-700">
+    <div class="text-center w-1/3 m-4 hover:border-8 rounded-3xl">
     <RouterLink to="/">Inicio</RouterLink> </div>
-    <div class="text-center w-1/3 m-4">
-    <RouterLink to="/personajes">¿Acerca de nosotros?</RouterLink> </div>
-    <div class="text-right w-1/3 m-4">
-    <RouterLink to="/about">Personajes</RouterLink> </div>
+    <div class="text-center w-1/3 m-4 hover:border-8 rounded-3xl">
+    <RouterLink to="/about">Acerca de</RouterLink> </div>
+    <div class="text-center w-1/3 m-4 hover:border-8 rounded-3xl">
+    <RouterLink to="characters">Personajes</RouterLink> </div>
   </div>
+  <RouterView />
 </template>
 
 <style scoped>
