@@ -7,14 +7,13 @@ import Cabecera from './components/Cabecera.vue'
 <template>
   <Cabecera/>
   <div class="font-mono bg-emerald-600 w-500 h-300 flex font-bold text-5xl border-y-8 border-y-sky-700">
-    <div class="text-center w-1/3 m-4 hover:border-8 rounded-3xl">
-    <RouterLink to="/">Inicio</RouterLink> </div>
-    <div class="text-center w-1/3 m-4 hover:border-8 rounded-3xl">
-    <RouterLink to="/about">Acerca de</RouterLink> </div>
-    <div class="text-center w-1/3 m-4 hover:border-8 rounded-3xl">
-    <RouterLink to="characters">Personajes</RouterLink> </div>
+    <RouterLink to="/" class="text-center w-1/3 m-4 hover:border-8 rounded-3xl">Inicio</RouterLink>
+    <RouterLink to="/about" class="text-center w-1/3 m-4 hover:border-8 rounded-3xl">Acerca de</RouterLink>
+    <RouterLink to="characters" class="text-center w-1/3 m-4 hover:border-8 rounded-3xl">Personajes</RouterLink>
   </div>
+  <div class="bg-emerald-200">
   <RouterView />
+  </div>
 </template>
 
 <style scoped>
